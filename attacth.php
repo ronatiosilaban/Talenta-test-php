@@ -3,11 +3,12 @@
 	<title>Add Data</title>
 </head>
 <style>
+	
 img{
 	width:400px;
 }
 .add{
-	margin-left:30vw;
+	margin-left:35vw;
 	margin-bottom:100px;
 }
 .add table{

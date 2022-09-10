@@ -21,6 +21,7 @@ table {
   border-collapse: collapse;
   width: 80vw;
   margin-left:10vw;
+  margin-bottom:50px
 }
 
 td, th {
@@ -62,6 +63,24 @@ h1{
 .imgs{
 	margin-left:30vw
 }
+.edit{
+	background-color:#76FF03;
+	border-color:#76FF03;
+	width:60px;
+	border-radius:5px
+}
+.edit a{
+	color:white;
+}
+.delete{
+	background-color:#E53935;
+	border-color:#E53935;
+	color:white;
+	border-radius:5px
+}
+.delete a{
+	color:white;s
+}
 
 </style>
 <body>
@@ -94,7 +113,7 @@ if($result){
 		echo "<td>".$res['name']."</td>";
 		echo "<td>".$res['age']."</td>";
 		echo "<td>".$res['gender']."</td>";	
-		echo "<td><a href=\"edit.php?id=$res[id]\">Edit</a> | <a href=\"delete.php?id=$res[id]\" onClick=\"return confirm('Are you sure you want to delete?')\">Delete</a></td>";		
+		echo "<td><button class='edit'><a href=\"edit.php?id=$res[id]\">Edit</a></button> | <button class='delete'><a href=\"delete.php?id=$res[id]\" onClick=\"return confirm('Are you sure you want to delete?')\">Delete</a><button></td>";		
 	}
 	?>
 	</table>
